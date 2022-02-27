@@ -1,0 +1,41 @@
+
+// 1170(slg) 992(lg) 768(md) 576(sm) 480(ssm) 320(xs)
+
+@include mq(slg) {
+  //1170(slg)
+
+}
+
+
+@include mq(lg) {
+  //992(slg)
+
+}
+
+
+
+@include mq(md) {
+  //768(md)
+
+}
+
+
+
+@include mq(sm) {
+  //576(sm)
+
+}
+
+
+
+@include mq(ssm) {
+  //480(ssm)
+
+}
+
+
+
+@include mq(xs) {
+  // 320(xs)
+
+}

@@ -1,0 +1,44 @@
+.header {
+  background: $color2;
+  &__inner {
+    @include flex($sb);
+    align-items: center;
+
+    padding: 2.8rem 0;
+  }
+}
+
+.menu {
+  // margin-left: auto;
+
+  &__btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+
+    &-link {
+      @include font($f12, $lh14, 500, $color1);
+      transition: all .3s;
+
+      &:hover {
+        border-bottom: .1rem solid #fff;
+        padding-bottom: .7rem;
+      }
+    }
+  }
+
+  &__item {
+
+    &+&::before {
+      content: '';
+      border-left: 1px solid #494949;
+      padding-left: 2rem;
+    }
+
+    &+& {
+      margin: 0 2rem;
+    }
+  }
+}
